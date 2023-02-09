@@ -1,0 +1,176 @@
+@import url('https://api.fontshare.com/v2/css?f[]=nunito@201&f[]=melodrama@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth; /*A rolagem do botão principal fica mais suave*/
+}
+
+body{
+    font-size: 100%;
+    background-image: url(modoClaroBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+::selection{
+    color: #9F86C0; 
+    background-color: #231942;
+}
+/*Menu superior*/
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.cabecalhoLogo{
+    height: 50px;
+}
+
+.cabecalhoMenu{
+    display: flex;
+    gap: 20px;
+}
+
+.itemCabecalho{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    color: #231942;
+    transition: 0.3s;
+}
+
+.itemCabecalho:hover{
+    transform: scale(1.1);
+    color: #BE95C4;
+}
+
+/*Menu superior*/
+
+/*Principal*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-fotoETexto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 51px;
+    margin: 10%;
+}
+
+.home-imagem{
+    max-width: 750px;
+}
+
+.home-tituloNome{
+    font-family: 'Melodrama', serif;
+    color: #231942;
+    font-size: 64px;
+}
+
+.home-subtitulo{
+    font-family: 'Nunito', sans-serif;
+    color: #5E548E;
+    font-size: 24px;
+}
+
+button{
+    background: #5E548E;
+    opacity: 0.48;
+    box-shadow: 0px 4px 4px rgba(35, 25, 66, 0.35);
+    border-radius: 10px;
+    border: 1px solid #E0B1CB;
+    cursor: pointer;
+    font-family: 'Melodrama', serif;
+    font-size: 30px;
+    color: #FFFCEB;
+    margin: 3% auto; /*em cima e em baixo | esquerda e direita*/
+    padding: 10px 43px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #9F86C0;
+    transform: scale(1.1);
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    background: #BE95C4;
+}
+
+.informacoesDeContato{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #231942;
+    margin-top: 5px;
+}
+
+.informacoesDeContato .tituloContatos{
+    font-family: 'Melodrama', serif;
+}
+
+.boxFormulario{
+    width: 400px;
+    margin-left: 50px;
+}
+
+input, textarea{
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+    border: none;
+    border-radius: 5px;
+    background: #FFFCEB;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+::placeholder{
+    color:#5E548E;
+}
+
+.form-botao{
+    display: block;
+    padding: 5px 20px;
+}
+/*Principal*/
+
+/*Footer*/
+
+footer{
+    background: #9F86C0;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Melodrama', serif;
+    color: #231942;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.imgFooter{
+    width: 30px;
+}
+
+/*Footer*/
