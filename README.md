@@ -13,6 +13,7 @@ A criação do site aconteceu após a criação da marca pessoal, conforme _mood
 ![projetoFigma](projetoFigma.png)
 
 #### _Para o futuro_
+- Implementação de maior responsividade para mobile;
 - Implementação do modo "_moonlight_" conforme projeto no Figma;
 - Atualização visual de detalhes na parte "Contatos" para tornar o site mais fidedigno ao projeto no Figma;
 
