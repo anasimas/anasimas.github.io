@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Ana Simas">
     <title>Ana Simas - Protfólio</title>
+
+    <!--CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Fonte-->
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@201&f[]=melodrama@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="cabecalho">
-        <img class="cabecalhoLogo" src="logoEmRosa.png">
+        <img class="cabecalhoLogo" src="imagens/logoEmRosa.png">
         <nav class="cabecalhoMenu">
-            <a class="itemCabecalho">Sobre</a>
+            <a class="itemCabecalho" href="sobre.html">Sobre</a>
             <a class="itemCabecalho" href="https://www.linkedin.com/in/ana-carolina-lambertucci-simas/">LinkedIn</a>
             <a class="itemCabecalho" href="https://github.com/anasimas">GitHub</a>
             <a class="itemCabecalho" href="https://www.behance.net/ana_simas">Behance</a>
@@ -27,14 +32,12 @@
          <div class="home-fotoETexto">
 
                 <div class="home-texto">
-                    <h1 class="home-tituloNome"><p>Ana Carolina</p></h1>
-                    <h1 class="home-tituloNome"><p>Lambertucci Simas</p></h1>
-                    <h2 class="home-subtitulo">Acadêmica de Análise e</h2>
-                    <h2 class="home-subtitulo"><p>Desenvolvimento de Sistemas</p></h2>
+                    <h1><p>Ana Carolina <br>Lambertucci Simas</p></h1>
+                    <h3 class="home-subtitulo">Acadêmica de Análise e <br>Desenvolvimento de Sistemas</h3>
                     <a href=#contato><button class="home-botao">Contato</button></a>
                 </div>
 
-                <img class="home-imagem" src="vetor teste.png">
+                <img class="home-imagem" src="imagens/vetor teste.png" alt="Foto de perfil">
             </div>
             
             <section class="contato" id="contato">
@@ -44,20 +47,29 @@
                     <p>+55(47)99210-6565</p>
                 </div>
                 <div class="boxFormulario">
-                    <form action="https://formspree.io/f/xlekjjok" method="post">
-                        <input type="text" id="nome" name="nomeCompleto" placeholder="Nome Completo" required>
-                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
-                        <input type="email" id="email" name="contato" placeholder="E-mail" required>
-                        <textarea type="text" id="msg" cols="0" rows="5" name="msg" placeholder="Digite sua mensagem" required></textarea>
-                        <button type="submit" class="form-botao">Enviar</button>
-                    </form>
+                    <fieldset name="contato">
+                        <form action="https://formspree.io/f/xlekjjok" method="post">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nomeCompleto" required>
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="contato" required>
+                            <label for="msg">Mensagem</label>
+                            <textarea type="text" id="msg" cols="0" rows="5" name="msg" required></textarea>
+                            <div class="form-botao">
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpar</button>
+                            </div>
+                        </form>
+                    </fieldset>
                 </div>
             </section>
         </div>
     </main>
 
     <footer class="rodape">
-        <img class="imgFooter" src="estrelaModoClaro.svg">
+        <img class="imgFooter" src="imagens/estrelaModoClaro.svg">
         <h4 class="msgFooter">Obrigada pela visita!</h4>
     </footer>
 </body>

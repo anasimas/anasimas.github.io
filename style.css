@@ -1,5 +1,3 @@
-@import url('https://api.fontshare.com/v2/css?f[]=nunito@201&f[]=melodrama@500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +8,7 @@
 
 body{
     font-size: 100%;
-    background-image: url(modoClaroBackground.png);
+    background-image: url(imagens/modoClaroBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -20,6 +18,11 @@ body{
     color: #9F86C0; 
     background-color: #231942;
 }
+
+main{
+    min-height: 700px;
+}
+
 /*Menu superior*/
 
 .cabecalho{
@@ -51,8 +54,6 @@ body{
     color: #BE95C4;
 }
 
-/*Menu superior*/
-
 /*Principal*/
 
 .container{
@@ -73,7 +74,7 @@ body{
     max-width: 750px;
 }
 
-.home-tituloNome{
+h1{
     font-family: 'Melodrama', serif;
     color: #231942;
     font-size: 64px;
@@ -95,7 +96,6 @@ button{
     font-family: 'Melodrama', serif;
     font-size: 30px;
     color: #FFFCEB;
-    margin: 3% auto; /*em cima e em baixo | esquerda e direita*/
     padding: 10px 43px;
     transition: 0.3s;
 }
@@ -111,7 +111,7 @@ button:hover{
     justify-content: center;
     gap: 50px;
     align-items: center;
-    background: #BE95C4;
+    background: linear-gradient(180deg, rgba(224,177,203,0.03545168067226889) 0%, rgba(159,134,192,1) 100%);
 }
 
 .informacoesDeContato{
@@ -128,6 +128,7 @@ button:hover{
 .boxFormulario{
     width: 400px;
     margin-left: 50px;
+    padding: 10px;
 }
 
 input, textarea{
@@ -139,17 +140,34 @@ input, textarea{
     background: #FFFCEB;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-}
-
-::placeholder{
-    color:#5E548E;
+    resize: none;
 }
 
 .form-botao{
-    display: block;
-    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
-/*Principal*/
+
+.form-botao button{
+    font-size: 20px;
+    padding: 2px 10px;
+}
+
+label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #231942;
+    margin: 38px;
+}
+
+fieldset{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background: linear-gradient(180deg, rgba(224,177,203,0.08587184873949583) 0%, rgba(224,177,203,1) 46%, rgba(159,134,192,1) 100%);
+    margin: 5px;
+}
 
 /*Footer*/
 
@@ -172,5 +190,3 @@ footer{
 .imgFooter{
     width: 30px;
 }
-
-/*Footer*/

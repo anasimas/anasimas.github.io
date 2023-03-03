@@ -12,8 +12,6 @@ A criação do site aconteceu após a criação da marca pessoal, conforme _mood
 ![Moodboard](moodboard.png)
 ![projetoFigma](projetoFigma.png)
 
-Para mais detalhes da identidade visual, por favor, visite meu [Behance](https://www.behance.net/ana_simas).
-
 #### _Para o futuro_
 - Implementação do modo "_moonlight_" conforme projeto no Figma;
 - Atualização visual de detalhes na parte "Contatos" para tornar o site mais fidedigno ao projeto no Figma;
