@@ -80,10 +80,14 @@ h1{
     font-size: 64px;
 }
 
-.home-subtitulo{
+h3{
     font-family: 'Nunito', sans-serif;
     color: #5E548E;
     font-size: 24px;
+}
+
+.home-botao{
+    margin-top: 10px;
 }
 
 button{
@@ -92,6 +96,7 @@ button{
     box-shadow: 0px 4px 4px rgba(35, 25, 66, 0.35);
     border-radius: 10px;
     border: 1px solid #E0B1CB;
+    border-top: 0;
     cursor: pointer;
     font-family: 'Melodrama', serif;
     font-size: 30px;
@@ -123,12 +128,6 @@ button:hover{
 
 .informacoesDeContato .tituloContatos{
     font-family: 'Melodrama', serif;
-}
-
-.boxFormulario{
-    width: 400px;
-    margin-left: 50px;
-    padding: 10px;
 }
 
 input, textarea{
@@ -167,6 +166,9 @@ fieldset{
     padding: 5px;
     background: linear-gradient(180deg, rgba(224,177,203,0.08587184873949583) 0%, rgba(224,177,203,1) 46%, rgba(159,134,192,1) 100%);
     margin: 5px;
+    width: 400px;
+    margin-left: 50px;
+    padding: 10px;
 }
 
 /*Footer*/
