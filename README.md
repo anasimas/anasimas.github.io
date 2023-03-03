@@ -3,14 +3,14 @@
 
 O projeto é referente ao meu site com meus contatos e redes sociais. Foi criado a partir de alguns estudos de HTML e CSS, principalmente sobre as propriedades _display_. 
 
-![Imagem](tela1.png)
+![Imagem](imagensReadme/tela1.png)
 
 #### _Sobre o projeto_
 
 A criação do site aconteceu após a criação da marca pessoal, conforme _moodboard_ abaixo:
 
-![Moodboard](moodboard.png)
-![projetoFigma](projetoFigma.png)
+![Moodboard](imagensReadme/moodboard.png)
+![projetoFigma](imagensReadme/projetoFigma.png)
 
 #### _Para o futuro_
 - Implementação do modo "_moonlight_" conforme projeto no Figma;
