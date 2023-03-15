@@ -192,3 +192,24 @@ footer{
 .imgFooter{
     width: 30px;
 }
+
+/* Redes sociais */
+
+.container-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.redesSociais{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    color: #231942;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.redesSociais:hover{
+    transform: scale(1.1);
+}
