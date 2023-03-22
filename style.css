@@ -8,10 +8,8 @@
 
 body{
     font-size: 100%;
-    background-image: url(imagens/modoClaroBackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+    background: linear-gradient(0deg, rgba(224,177,203,1) 18%, rgba(255,252,235,1) 100%);
+
 }
 
 ::selection{
@@ -20,7 +18,7 @@ body{
 }
 
 main{
-    min-height: 100vh;
+    height: 95vh;
 }
 
 /*Menu superior*/
@@ -30,16 +28,16 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 2vh;
 }
 
 .cabecalhoLogo{
-    height: 50px;
+    height: 5vh;
 }
 
 .cabecalhoMenu{
     display: flex;
-    gap: 20px;
+    gap: 1vw;
 }
 
 .itemCabecalho{
@@ -58,20 +56,15 @@ main{
 
 .container{
     display: flex;
-    flex-direction: column;
-}
-
-.home-fotoETexto{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 51px;
-    margin: 10%;
+    gap: 5vw;
+    margin: 7vh;
 }
 
 .home-imagem{
-    max-width: 750px;
+    width: 35vw;
 }
 
 h1{
@@ -87,7 +80,7 @@ h3{
 }
 
 .home-botao{
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 button{
@@ -110,13 +103,23 @@ button:hover{
     transform: scale(1.1);
 }
 
+/*Sobre*/
+
+.container-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+/*Pag Contato*/
+
 .contato{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    align-items: center;
+    gap: 5vh;
     height: 100vh;
 }
 
@@ -146,12 +149,13 @@ input, textarea{
 .form-botao{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 1vw;
 }
 
 .form-botao button{
     font-size: 20px;
-    padding: 2px 10px;
+    padding: 5px 10px;
+    margin-top: 3vh;
 }
 
 label {
@@ -162,14 +166,35 @@ label {
 }
 
 fieldset{
-    border-radius: 5px;
+    border-radius: 15px;
     border: none;
     padding: 5px;
     background: linear-gradient(180deg, rgba(224,177,203,0.08587184873949583) 0%, rgba(224,177,203,1) 46%, rgba(159,134,192,1) 100%);
     margin: 5px;
-    width: 400px;
-    margin-left: 50px;
-    padding: 10px;
+    width: 30vw;
+    padding: 3vw;
+}
+
+/* Redes sociais */
+
+.container-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.redesSociais{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    color: #231942;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.redesSociais:hover{
+    transform: scale(1.1);
 }
 
 /*Footer*/
@@ -187,32 +212,11 @@ footer{
     font-family: 'Melodrama', serif;
     color: #231942;
     font-size: 20px;
-    padding: 15px;
+    padding: 1vh;
 }
 
 .imgFooter{
-    width: 30px;
-}
-
-/* Redes sociais */
-
-.container-redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.redesSociais{
-    font-family: 'Nunito', sans-serif;
-    font-size: 50px;
-    color: #231942;
-    margin: 5px;
-    transition: 0.3s;
-}
-
-.redesSociais:hover{
-    transform: scale(1.1);
+    width: 2vw;
 }
 
 /*Media query*/
