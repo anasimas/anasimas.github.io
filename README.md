@@ -15,6 +15,5 @@ A criação do site aconteceu após a criação da marca pessoal, conforme _mood
 #### _Para o futuro_
 - Implementação de maior responsividade para mobile;
 - Implementação do modo "_moonlight_" conforme projeto no Figma;
-- Atualização visual de detalhes na parte "Contatos" para tornar o site mais fidedigno ao projeto no Figma;
 
 > [LinkedIn](https://www.linkedin.com/in/ana-carolina-lambertucci-simas/)
