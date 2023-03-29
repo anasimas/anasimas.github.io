@@ -8,7 +8,7 @@
 
 body{
     font-size: 100%;
-    background: linear-gradient(0deg, rgba(224,177,203,1) 18%, rgba(255,252,235,1) 100%);
+    background: linear-gradient(180deg, rgba(224,177,203,1) 18%, rgba(159,134,192,1) 100%);
 
 }
 
@@ -18,7 +18,7 @@ body{
 }
 
 main{
-    height: 95vh;
+    height: 100vh;
 }
 
 /*Menu superior*/
@@ -28,7 +28,8 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 2vh;
+    gap: 25vw;
+    padding: 4vh;
 }
 
 .cabecalhoLogo{
@@ -37,12 +38,12 @@ main{
 
 .cabecalhoMenu{
     display: flex;
-    gap: 1vw;
+    gap: 1.5vw;
 }
 
 .itemCabecalho{
     font-family: 'Nunito', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     color: #231942;
     transition: 0.3s;
 }
@@ -59,24 +60,24 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5vw;
-    margin: 7vh;
+    gap: 3vw;
+    margin: 15vh;
 }
 
 .home-imagem{
-    width: 35vw;
+    width: 25vw;
 }
 
 h1{
     font-family: 'Melodrama', serif;
     color: #231942;
-    font-size: 64px;
+    font-size: 55px;
 }
 
 h3{
     font-family: 'Nunito', sans-serif;
     color: #5E548E;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .home-botao{
@@ -94,7 +95,7 @@ button{
     font-family: 'Melodrama', serif;
     font-size: 30px;
     color: #FFFCEB;
-    padding: 10px 43px;
+    padding: 8px 38px;
     transition: 0.3s;
 }
 
@@ -200,7 +201,7 @@ fieldset{
 /*Footer*/
 
 footer{
-    background: #9F86C0;
+    background: #5E548E;
 }
 
 .rodape{
