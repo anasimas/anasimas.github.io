@@ -222,3 +222,57 @@ footer{
 
 /*Media query*/
 
+@media screen and (max-width: 780px) {
+    main{
+        height: 80vh;
+    }
+
+    .itemCabecalho{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+
+    .rodape{
+        font-size: 15px;
+    }
+
+    .container-sobre{
+        height: 80vh;
+    }
+
+    .informacoesDeContato{
+        font-size: 15px;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+    }
+
+    fieldset{
+        margin-bottom: 5vh;
+    }
+
+    label{
+        font-size: 15px;
+        margin: 2vw;
+    }
+
+    input, textarea{
+        font-size: 15px;
+        margin: 2px auto;
+    }
+}
