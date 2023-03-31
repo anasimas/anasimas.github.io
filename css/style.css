@@ -33,7 +33,7 @@ main{
 }
 
 .cabecalhoLogo{
-    height: 5vh;
+    height: 8vh;
 }
 
 .cabecalhoMenu{
@@ -242,7 +242,10 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 45vw;
+    }
+
+    .home-texto{
+        text-align: center;
     }
 
     .home-imagem{
@@ -250,11 +253,11 @@ footer{
     }
 
     h1{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     h3{
-        font-size: 13px;
+        font-size: 10px;
     }
 
     button{
@@ -428,7 +431,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
     
     .home-texto{
         max-width: 30vw;
