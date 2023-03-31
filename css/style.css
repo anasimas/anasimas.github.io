@@ -18,7 +18,7 @@ body{
 }
 
 main{
-    height: 100vh;
+    height: 90vh;
 }
 
 /*Menu superior*/
@@ -29,11 +29,11 @@ main{
     align-items: center;
     justify-content: space-around;
     gap: 25vw;
-    padding: 4vh;
+    padding: 2vh;
 }
 
 .cabecalhoLogo{
-    height: 5vh;
+    height: 8vh;
 }
 
 .cabecalhoMenu{
@@ -61,11 +61,16 @@ main{
     align-items: center;
     justify-content: center;
     gap: 3vw;
-    margin: 15vh;
+    margin: 2vh;
+    height: 100%;
 }
 
 .home-imagem{
-    width: 25vw;
+    width: 30vw;
+}
+
+.home-texto{
+    max-width: 30vw;
 }
 
 h1{
@@ -117,11 +122,10 @@ button:hover{
 
 .contato{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
-    height: 100vh;
+    gap: 10vh;
+    height: 80vh;
 }
 
 .informacoesDeContato{
@@ -135,9 +139,16 @@ button:hover{
     font-family: 'Melodrama', serif;
 }
 
+label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #231942;
+    margin-left: 1vw;
+}
+
 input, textarea{
     display: block;
-    width: 80%;
+    width: 95%;
     margin: 8px auto;
     border: none;
     border-radius: 5px;
@@ -159,21 +170,14 @@ input, textarea{
     margin-top: 3vh;
 }
 
-label {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    color: #231942;
-    margin: 38px;
-}
-
 fieldset{
     border-radius: 15px;
     border: none;
     padding: 5px;
     background: linear-gradient(180deg, rgba(224,177,203,0.08587184873949583) 0%, rgba(224,177,203,1) 46%, rgba(159,134,192,1) 100%);
     margin: 5px;
-    width: 30vw;
-    padding: 3vw;
+    padding: 1vw;
+    width: 25vw;
 }
 
 /* Redes sociais */
@@ -222,20 +226,93 @@ footer{
 
 /*Media query*/
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 480px) {
+
+    .cabecalhoLogo{
+        display: none;
+    }
+
     main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-texto{
+        text-align: center;
+    }
+
+    .home-imagem{
+        width: 45vw;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    button{
+        display: none;
+    }
+
+    .rodape{
+        font-size: 15px;
+    }
+
+    .informacoesDeContato{
+        font-size: 15px;
+    }
+
+    .contato{
+        display: flex;
         height: 80vh;
     }
+
+    fieldset{
+        margin-bottom: 5vh;
+        width: 70vw;;
+    }
+
+    label{
+        font-size: 15px;
+        margin: 5vw;
+    }
+
+    input, textarea{
+        font-size: 15px;
+        margin: 2px auto;
+    }
+
+    .redesSociais{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
     .itemCabecalho{
         font-size: 15px;
     }
 
-    h1{
-        font-size: 30px;
+    .home-texto{
+        max-width: 35vw;
     }
 
-    h2{
+    h1{
+        font-size: 22px;
+    }
+
+    h3{
         font-size: 15px;
     }
 
@@ -244,12 +321,16 @@ footer{
         padding: 5px 20px;
     }
 
+    .home-imagem{
+        min-width: 30vw;
+    }
+
     .rodape{
         font-size: 15px;
     }
 
     .container-sobre{
-        height: 80vh;
+        height: 70vh;
     }
 
     .informacoesDeContato{
@@ -259,11 +340,11 @@ footer{
     .contato{
         display: flex;
         flex-direction: row;
-        height: 80vh;
     }
 
     fieldset{
-        margin-bottom: 5vh;
+        margin-bottom: 2vh;
+        width: 40vw;
     }
 
     label{
@@ -275,4 +356,126 @@ footer{
         font-size: 15px;
         margin: 2px auto;
     }
+
+    .form-botao button{
+        font-size: 15px;
+    }
+
+    .redesSociais{
+        font-size: 25px;
+    }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container{
+        margin: 8vh;
+    }
+
+    .home-texto{
+        min-width: 25vw;
+        max-width: 30vw;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 15px;
+        padding: 5px 25px;
+    }
+
+    .home-imagem{
+        min-width: 30px;
+        max-width: 35vw;
+    }
+
+    .rodape{
+        font-size: 20px;
+    }
+
+    .informacoesDeContato{
+        font-size: 18px;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: row;
+    }
+
+    fieldset{
+        margin-bottom: 2vh;
+        width: 35vw;
+    }
+
+    label{
+        font-size: 15px;
+        margin: 3vw;
+    }
+
+    input, textarea{
+        font-size: 15px;
+        margin: 2px auto;
+    }
+
+    .form-botao button{
+        font-size: 18px;
+    }
+
+    .redesSociais{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    
+    .home-texto{
+        max-width: 30vw;
+    }
+
+    h1{
+        font-size: 38px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: row;
+    }
+
+    fieldset{
+        margin-bottom: 2vh;
+        width: 35vw;
+    }
+
+    label{
+        font-size: 15px;
+        margin: 3vw;
+    }
+
+    input, textarea{
+        font-size: 15px;
+        margin: 2px auto;
+    }
+
+    .form-botao button{
+        font-size: 18px;
+    }
+
+    .redesSociais{
+        font-size: 30px;
+    }
+}   
