@@ -62,7 +62,7 @@ main{
     justify-content: center;
     gap: 3vw;
     margin: 2vh;
-    height: 100%;
+    margin-top: 10vh;
 }
 
 .home-imagem{
@@ -226,10 +226,14 @@ footer{
 
 /*Media query*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (orientation: portrait) {
 
     .cabecalhoLogo{
         display: none;
+    }
+
+    .cabecalhoMenu{
+        gap: 5vw;
     }
 
     main{
@@ -247,21 +251,22 @@ footer{
 
     .home-texto{
         text-align: center;
+        max-width: 50%;
     }
 
     .home-imagem{
-        width: 45vw;
+        width: 55vw;
     }
 
     h1{
-        font-size: 18px;
+        font-size: 40px;
     }
 
     h3{
-        font-size: 10px;
+        font-size: 20px;
     }
 
-    button{
+    .home-botao{
         display: none;
     }
 
@@ -270,31 +275,38 @@ footer{
     }
 
     .informacoesDeContato{
-        font-size: 15px;
+        font-size: 23px;
     }
 
     .contato{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 80vh;
     }
 
     fieldset{
         margin-bottom: 5vh;
-        width: 70vw;;
+        width: 70vw;
     }
 
     label{
-        font-size: 15px;
-        margin: 5vw;
+        font-size: 20px;
+        margin: 2vw;
     }
 
     input, textarea{
-        font-size: 15px;
+        font-size: 20px;
         margin: 2px auto;
     }
 
+    button{
+        font-size: 30px;
+    }
+
     .redesSociais{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
